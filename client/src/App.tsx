@@ -21,8 +21,10 @@ export type WilderData = {
   city: string
 }
 
+//Test
+
 function App() {
-  
+
   const { loading, error, data } = useQuery<{wilders:WilderData[]}>(ALL_WILDERS);
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error : {error.message}</p>;
