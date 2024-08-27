@@ -21,8 +21,6 @@ export type WilderData = {
   city: string
 }
 
-//Test
-
 function App() {
 
   const { loading, error, data } = useQuery<{wilders:WilderData[]}>(ALL_WILDERS);
